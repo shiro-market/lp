@@ -12,264 +12,383 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: system-ui, -apple-system, sans-serif;
-      color: #2C2C2C;
-      background: #FFFFFF;
+      color: #FFFFFF;
+      background: #0D1F35;
       line-height: 1.8;
       font-size: 16px;
       max-width: 480px;
       margin: 0 auto;
-      padding-bottom: 80px;
+      padding-bottom: 72px;
     }
 
-    p {
-      margin-bottom: 1em;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
+    p { margin-bottom: 1em; }
+    p:last-child { margin-bottom: 0; }
 
     h1 {
-      font-size: clamp(1.5rem, 6vw, 2rem);
+      font-size: clamp(1.7rem, 7vw, 2.2rem);
       font-weight: 900;
-      line-height: 1.4;
+      line-height: 1.35;
+      color: #FFFFFF;
     }
 
     h2 {
-      font-size: clamp(1.2rem, 5vw, 1.5rem);
+      font-size: clamp(1.15rem, 5vw, 1.45rem);
       font-weight: 800;
       line-height: 1.4;
       margin-bottom: 20px;
     }
 
-    /* Header */
+    /* ── Header ── */
     header {
-      background: #FFFFFF;
-      padding: 16px 20px;
-      border-bottom: 2px solid #C0392B;
+      background: #0D1F35;
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(245,158,11,0.3);
     }
 
     .logo {
-      color: #C0392B;
+      color: #F59E0B;
       font-weight: 900;
-      font-size: 1.2rem;
-      letter-spacing: 0.02em;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
     }
 
-    /* Hero */
+    /* ── Hero ── */
     #hero {
-      background: #C0392B;
-      color: #FFFFFF;
-      padding: 48px 20px 52px;
+      background: #0D1F35;
+      padding: 40px 20px 52px;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      color: #F59E0B;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin-bottom: 22px;
     }
 
     #hero h1 {
-      color: #FFFFFF;
-      margin-bottom: 16px;
+      margin-bottom: 6px;
+      white-space: pre-line;
+    }
+
+    .hero-h2 {
+      font-size: clamp(1.4rem, 6vw, 1.8rem);
+      font-weight: 900;
+      color: #F59E0B;
+      line-height: 1.3;
+      margin: 12px 0 20px;
     }
 
     .hero-sub {
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.9);
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.75;
       margin-bottom: 32px;
-      line-height: 1.7;
     }
 
-    /* Buttons */
-    .btn-main {
+    .btn-amber {
       display: block;
+      background: #F59E0B;
+      color: #000000;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 900;
+      padding: 17px 20px;
+      border-radius: 8px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn-amber:active { opacity: 0.88; }
+
+    .hero-note {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* ── Feelings (white bg) ── */
+    #feelings {
       background: #FFFFFF;
-      color: #C0392B;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 900;
-      padding: 16px 20px;
-      border-radius: 6px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .btn-main:active {
-      opacity: 0.9;
-    }
-
-    .btn-cta {
-      display: block;
-      background: #C0392B;
-      color: #FFFFFF;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 900;
-      padding: 16px 20px;
-      border-radius: 6px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .btn-cta:active {
-      opacity: 0.9;
-    }
-
-    /* Sections */
-    section {
       padding: 48px 20px;
     }
 
-    section:nth-child(even) {
-      background: #FFF5F5;
+    #feelings h2 {
+      color: #0D1F35;
     }
 
-    /* Empathy list */
-    .emp-list {
-      list-style: none;
-      margin: 20px 0;
-    }
-
-    .emp-list li {
-      padding: 10px 0 10px 20px;
-      position: relative;
-      border-bottom: 1px solid #EEE;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    .emp-list li:last-child {
-      border-bottom: none;
-    }
-
-    .emp-list li::before {
-      content: '・';
-      position: absolute;
-      left: 0;
-      color: #C0392B;
-      font-weight: 900;
-    }
-
-    /* Author section */
-    .author-box {
-      background: #FFF5F5;
+    .feeling-card {
       border-left: 4px solid #C0392B;
+      background: #FFF8F8;
       border-radius: 0 8px 8px 0;
-      padding: 20px;
-      margin-top: 20px;
-      font-size: 0.95rem;
-      line-height: 1.8;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      font-size: 0.93rem;
+      color: #2C2C2C;
+      line-height: 1.65;
     }
 
-    /* Book mock */
-    .book-mock {
-      background: #C0392B;
-      color: #FFFFFF;
-      border-radius: 8px;
-      padding: 28px 20px;
+    .feeling-card:last-child { margin-bottom: 0; }
+
+    /* ── Transition ── */
+    #transition {
+      background: #0D1F35;
+      padding: 48px 20px;
       text-align: center;
-      margin: 20px 0;
     }
 
-    .book-mock-title {
-      font-size: 1.1rem;
+    .transition-text {
+      font-size: 1.05rem;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+
+    .transition-emphasis {
+      font-size: clamp(1.5rem, 6vw, 2rem);
       font-weight: 900;
-      line-height: 1.5;
+      color: #F59E0B;
+      line-height: 1.2;
+    }
+
+    /* ── Author Story (white bg) ── */
+    #author {
+      background: #FFFFFF;
+      padding: 48px 20px;
+    }
+
+    #author h2 {
+      color: #0D1F35;
+    }
+
+    .author-img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    .author-img-fallback {
+      width: 100%;
+      height: 220px;
+      background: linear-gradient(135deg, #0D1F35, #1a3a5c);
+      border-radius: 10px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
       margin-bottom: 10px;
     }
 
-    .book-mock-badge {
-      display: inline-block;
-      background: #FFFFFF;
-      color: #C0392B;
-      font-size: 0.85rem;
+    .author-caption {
+      font-size: 0.75rem;
+      color: #888;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    #author p {
+      color: #2C2C2C;
+      font-size: 0.95rem;
+    }
+
+    .author-emphasis {
+      color: #F59E0B;
+      font-size: clamp(1.1rem, 4.5vw, 1.3rem);
       font-weight: 900;
-      padding: 6px 20px;
-      border-radius: 4px;
+      text-align: center;
+      margin-top: 24px;
+      line-height: 1.4;
+    }
+
+    /* ── Proof (dark) ── */
+    #proof {
+      background: #0D1F35;
+      padding: 48px 20px;
+    }
+
+    #proof h2 {
+      color: #FFFFFF;
+    }
+
+    .proof-img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      display: block;
+      object-fit: cover;
+    }
+
+    .proof-img-fallback {
+      width: 100%;
+      height: 180px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      border: 1.5px solid rgba(255,255,255,0.15);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.8rem;
+    }
+
+    .proof-caption-amber {
+      font-size: 0.75rem;
+      color: #F59E0B;
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 28px;
+    }
+
+    .proof-caption-white {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
       margin-top: 8px;
     }
 
-    /* Book contents list */
+    /* ── Why Free (white bg) ── */
+    #whyfree {
+      background: #FFFFFF;
+      padding: 48px 20px;
+    }
+
+    #whyfree h2 {
+      color: #0D1F35;
+    }
+
+    #whyfree p {
+      color: #2C2C2C;
+      font-size: 0.95rem;
+    }
+
+    .quote-block {
+      border-left: 4px solid #F59E0B;
+      background: #FFF8EE;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 18px;
+      margin: 20px 0;
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: #0D1F35;
+      line-height: 1.6;
+    }
+
+    /* ── Book Contents (dark) ── */
+    #book {
+      background: #0D1F35;
+      padding: 48px 20px;
+    }
+
+    #book h2 {
+      color: #F59E0B;
+    }
+
     .book-list {
       list-style: none;
-      margin: 20px 0;
+      margin-top: 8px;
     }
 
     .book-list li {
-      padding: 10px 0 10px 24px;
+      padding: 12px 0 12px 28px;
       position: relative;
-      border-bottom: 1px solid #EEE;
-      font-size: 0.93rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.9);
       line-height: 1.6;
     }
 
-    .book-list li:last-child {
-      border-bottom: none;
-    }
+    .book-list li:last-child { border-bottom: none; }
 
     .book-list li::before {
-      content: '▶';
+      content: '✦';
       position: absolute;
       left: 0;
-      top: 12px;
-      font-size: 0.65rem;
-      color: #C0392B;
+      color: #F59E0B;
+      font-size: 0.8rem;
+      top: 14px;
     }
 
-    /* Check list */
+    /* ── For Whom (white bg) ── */
+    #forwho {
+      background: #FFFFFF;
+      padding: 48px 20px;
+    }
+
+    #forwho h2 {
+      color: #0D1F35;
+    }
+
     .check-list {
       list-style: none;
-      margin: 20px 0;
+      margin-top: 8px;
     }
 
     .check-list li {
-      padding: 10px 0 10px 28px;
+      padding: 12px 0 12px 28px;
       position: relative;
       border-bottom: 1px solid #EEE;
       font-size: 0.95rem;
+      color: #2C2C2C;
       line-height: 1.6;
     }
 
-    .check-list li:last-child {
-      border-bottom: none;
-    }
+    .check-list li:last-child { border-bottom: none; }
 
     .check-list li::before {
       content: '✔';
       position: absolute;
       left: 0;
-      color: #C0392B;
+      color: #F59E0B;
       font-weight: 900;
     }
 
-    /* CTA section */
+    /* ── Final CTA (dark) ── */
     #cta {
-      background: #C0392B;
-      color: #FFFFFF;
-      padding: 48px 20px;
+      background: #0D1F35;
+      padding: 52px 20px;
       text-align: center;
     }
 
     #cta h2 {
       color: #FFFFFF;
-      margin-bottom: 12px;
+      font-size: clamp(1.4rem, 6vw, 1.8rem);
+      margin-bottom: 8px;
     }
 
-    .cta-desc {
-      font-size: 0.93rem;
-      color: rgba(255,255,255,0.9);
+    .cta-sub {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
       margin-bottom: 28px;
-      line-height: 1.7;
     }
 
-    /* Fixed bottom CTA */
+    .cta-note {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #060F1A;
+      color: rgba(255,255,255,0.3);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.72rem;
+    }
+
+    /* ── Fixed CTA ── */
     #fixed-cta {
       position: fixed;
       bottom: 0;
@@ -277,47 +396,21 @@
       transform: translateX(-50%);
       width: 100%;
       max-width: 480px;
-      background: #C0392B;
+      background: #F59E0B;
       padding: 10px 16px;
       z-index: 999;
-      box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.35);
     }
 
-    #fixed-cta .btn-fixed {
+    #fixed-cta a {
       display: block;
-      background: #FFFFFF;
-      color: #C0392B;
+      color: #000000;
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.97rem;
       font-weight: 900;
-      padding: 13px 20px;
-      border-radius: 6px;
       text-align: center;
+      padding: 11px 0;
       letter-spacing: 0.03em;
-    }
-
-    .hero-note {
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.7);
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .author-emphasis {
-      color: #C0392B;
-      font-size: 1.05rem;
-      font-weight: 900;
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    /* Footer */
-    footer {
-      background: #2C2C2C;
-      color: rgba(255,255,255,0.45);
-      text-align: center;
-      padding: 20px;
-      font-size: 0.75rem;
     }
   </style>
 </head>
@@ -330,57 +423,99 @@
 
   <!-- Hero -->
   <section id="hero">
-    <h1>その税金の請求書、節約で乗り越えようとしていませんか？</h1>
-    <p class="hero-sub">色んな副業でマイナスを出し続けた。<br>妻にバレたら離婚の状況で、それでも諦めなかった。<br>副業禁止の会社員が半年で年収を超えるまでの全記録を<br>今だけ無料でお渡しします</p>
-    <a href="#" class="btn-main">▶︎ 脱サラの赤本を無料で受け取る</a>
-    <p class="hero-note">※登録はLINEのみ。メアド不要・完全無料です</p>
+    <p class="hero-eyebrow">2026年 固定資産税・住民税の請求書が届いたあなたへ</p>
+
+    <h1>給料は上がらない。<br>バイトする時間もない。<br>だったら——</h1>
+
+    <p class="hero-h2">インターネットで<br>稼ぐしかない。</p>
+
+    <p class="hero-sub">副業禁止の会社員が、スマホ1台で<br>半年後に年収を超えた方法を<br>今だけ無料でお渡しします</p>
+
+    <a href="#" class="btn-amber">▶︎ 脱サラの赤本を無料で受け取る</a>
+    <p class="hero-note">※LINEのみ・メアド不要・完全無料</p>
   </section>
 
-  <!-- Empathy -->
-  <section id="empathy">
-    <h2>毎年この時期、こんな気持ちになりませんか？</h2>
-    <ul class="emp-list">
-      <li>固定資産税の封筒を開けるたびにため息が出る</li>
-      <li>節約しても税金だけは削れない</li>
-      <li>会社員として何十年も働き続けることへの漠然とした不安</li>
-      <li>副業しようにも何から始めればいいかわからない</li>
-    </ul>
+  <!-- Feelings -->
+  <section id="feelings">
+    <h2>こんな気持ち、ありませんか？</h2>
+
+    <div class="feeling-card">固定資産税の封筒を開けて、また今年もため息が出た</div>
+    <div class="feeling-card">給料を上げてもらうのは、現実的じゃない</div>
+    <div class="feeling-card">仕事終わりにバイトに行く体力も時間もない</div>
+    <div class="feeling-card">副業をやろうとしたけど、何から始めればいいかわからない</div>
+    <div class="feeling-card">インターネットで稼ぐって言っても、怪しくないか不安</div>
   </section>
 
-  <!-- Author -->
+  <!-- Transition -->
+  <section id="transition">
+    <p class="transition-text">その気持ち、全部わかります。</p>
+    <p class="transition-emphasis">私も同じでした。</p>
+  </section>
+
+  <!-- Author Story -->
   <section id="author">
-    <h2>著者も、ずっと失敗し続けていました</h2>
-    <div class="author-box">
-      <p>リーマンショックの就職氷河期に倍率400倍を突破して大手企業に入社。<br>でも年功序列の閉塞感に耐えられず転職を決意。</p>
-      <p>転職先のベンチャーが合わなくて、入社3日目に転職サイトに登録した。</p>
-      <p>一家の大黒柱なのに。笑</p>
-      <p>そこから転職を繰り返して、やっと落ち着いた頃にコロナが来た。</p>
-      <p>周りで倒産・リストラ・給料激減が頻発した。<br>「いつ自分の番が来るかわからない」と夜も眠れなかった。</p>
-      <p>お金がないのに副業に投資して、全部空振り。<br>多額の損失を出した。</p>
-      <p>しかも会社は副業禁止。<br>妻にバレたら「離婚」という状況で、それでも諦めなかった。</p>
-      <p>そんな状況でWEBマーケティングという考え方に出会い、<br>半年後、副収入が会社の年収を超えた。</p>
-    </div>
-    <p class="author-emphasis">この話を、全部正直に書きました。</p>
+    <img
+      src="images/author.jpeg"
+      alt="著者：会社員をしながら、今は場所を選ばず働いています"
+      class="author-img"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+    >
+    <div class="author-img-fallback">画像を読み込めませんでした</div>
+    <p class="author-caption">会社員をしながら、今は場所を選ばず働いています</p>
+
+    <h2>転職失敗、副業マイナス、それでも諦めなかった</h2>
+
+    <p>リーマンショックの就職氷河期に倍率400倍を突破して大手企業に入社。でも年功序列の閉塞感に耐えられず転職を決意しました。</p>
+
+    <p>転職先のベンチャーが合わなくて、入社3日目に転職サイトに登録しました。一家の大黒柱なのに。笑</p>
+
+    <p>コロナで周りが倒産・リストラ・給料激減。いつ自分の番が来るかと夜も眠れませんでした。</p>
+
+    <p>お金がないのに副業に投資して、全部空振り。多額の損失を出しました。会社は副業禁止。妻にバレたら離婚という状況でした。</p>
+
+    <p>そんな中でWEBマーケティングという考え方に出会い、半年後——</p>
+
+    <p class="author-emphasis">副収入が、会社の年収を超えました。</p>
+  </section>
+
+  <!-- Proof -->
+  <section id="proof">
+    <h2>これが、その結果です</h2>
+
+    <img
+      src="images/income.png"
+      alt="2026年4月の入金明細"
+      class="proof-img"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+    >
+    <div class="proof-img-fallback">画像を読み込めませんでした</div>
+    <p class="proof-caption-amber">2026年4月の入金明細（一部）</p>
+
+    <img
+      src="images/car.jpeg"
+      alt="副業収入で手に入れた車"
+      class="proof-img"
+      style="margin-top: 20px;"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+    >
+    <div class="proof-img-fallback">画像を読み込めませんでした</div>
+    <p class="proof-caption-white">副業収入で手に入れた車。でも生活スタイルは何も変えていません。</p>
   </section>
 
   <!-- Why Free -->
   <section id="whyfree">
     <h2>なぜ無料でお渡しするのか</h2>
-    <p>「人に還元していくことは、巡り巡って自分に返ってくる」</p>
-    <p>これは著者がWEBマーケを教えてもらった人から学んだ言葉です。</p>
-    <p>この書籍を読んで、一人でも多くの人に<br>「WEBマーケティングという選択肢がある」<br>ということを知ってほしい。</p>
-    <p>それだけの理由で、無料でお渡ししています。</p>
+
+    <p>WEBマーケティングを教えてくれた人から言われた言葉があります。</p>
+
+    <div class="quote-block">「人に還元していくことは、巡り巡って自分に返ってくる」</div>
+
+    <p>この言葉通りに生きたいと思っています。だから無料です。</p>
   </section>
 
-  <!-- Book -->
+  <!-- Book Contents -->
   <section id="book">
     <h2>脱サラの赤本：全30ページ</h2>
-
-    <div class="book-mock">
-      <div class="book-mock-title">脱サラの赤本</div>
-      <div class="book-mock-badge">全30ページ・完全無料</div>
-    </div>
-
     <ul class="book-list">
       <li>副業でマイナスばかりだった著者の実話</li>
       <li>なぜ他の副業ではなくWEBマーケなのか</li>
@@ -389,23 +524,24 @@
     </ul>
   </section>
 
-  <!-- For whom -->
+  <!-- For Whom -->
   <section id="forwho">
     <h2>こんな方に読んでほしい</h2>
     <ul class="check-list">
       <li>税金の請求書を見てため息が出た方</li>
-      <li>節約より収入を増やしたい会社員・主婦の方</li>
-      <li>副業禁止でも収入を作りたい方</li>
-      <li>WEBマーケティングに興味がある方</li>
-      <li>脱サラを将来的に考えている方</li>
+      <li>給料が上がらず、でもバイトをする時間もない方</li>
+      <li>インターネットで稼ぎたいが何から始めればいいかわからない方</li>
+      <li>副業禁止でも収入を作りたい会社員の方</li>
+      <li>将来の不安を、行動で解消したい方</li>
     </ul>
   </section>
 
-  <!-- CTA -->
+  <!-- Final CTA -->
   <section id="cta">
-    <h2>今すぐ受け取れます。登録は30秒。</h2>
-    <p class="cta-desc">LINEの友だち追加をするだけで、すぐにPDFをお届けします。<br>メールアドレスの登録も、クレジットカードも不要です。<br>完全無料です。</p>
-    <a href="#" class="btn-main">▶︎ 脱サラの赤本を今すぐ無料で受け取る</a>
+    <h2>今すぐ受け取れます</h2>
+    <p class="cta-sub">登録は30秒。メアド不要・完全無料。</p>
+    <a href="#" class="btn-amber">▶︎ 脱サラの赤本を今すぐ無料で受け取る</a>
+    <p class="cta-note">LINEの友だち追加をするだけで、すぐにPDFをお届けします</p>
   </section>
 
   <!-- Footer -->
@@ -415,7 +551,7 @@
 
   <!-- Fixed bottom CTA -->
   <div id="fixed-cta">
-    <a href="#" class="btn-fixed">▶︎ 脱サラの赤本を無料で受け取る</a>
+    <a href="#">▶︎ 無料で受け取る</a>
   </div>
 
 </body>
