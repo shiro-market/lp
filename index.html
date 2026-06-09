@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AIで副業を始める30日間ロードマップ｜スキル不要・無料ツールで月3万円を目指す</title>
-  <meta name="description" content="固定資産税・住民税の請求書を見てため息が出た方へ。AIツールを使ってスキルゼロから副業を始める具体的な方法を無料電子書籍でお伝えします。">
+  <title>脱サラの赤本｜会社員がバレずにWEB起業した方法を無料プレゼント</title>
+  <meta name="description" content="固定資産税・住民税の請求書を見てため息が出た方へ。副業禁止の会社員が半年で年収を超えたWEBマーケの方法を30ページの電子書籍で無料配布中。LINE登録で今すぐ受け取れます。">
   <style>
-    /* ===================================
-       Reset & Base
-    =================================== */
     *, *::before, *::after {
       margin: 0;
       padding: 0;
@@ -20,12 +17,14 @@
     }
 
     body {
-      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', 'Yu Gothic', sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       color: #2C2C2C;
-      background: #FAFAF8;
+      background: #FFFFFF;
       line-height: 1.8;
       font-size: 16px;
-      padding-bottom: 76px;
+      max-width: 480px;
+      margin: 0 auto;
+      padding-bottom: 80px;
     }
 
     p {
@@ -36,341 +35,114 @@
       margin-bottom: 0;
     }
 
-    /* ===================================
-       Typography
-    =================================== */
     h1 {
-      font-size: clamp(2.6rem, 9vw, 4rem);
+      font-size: clamp(1.5rem, 6vw, 2rem);
       font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
+      line-height: 1.4;
     }
 
     h2 {
-      font-size: clamp(1.4rem, 5.5vw, 1.9rem);
+      font-size: clamp(1.2rem, 5vw, 1.5rem);
       font-weight: 800;
       line-height: 1.4;
-      letter-spacing: -0.01em;
-    }
-
-    h3 {
-      font-size: clamp(1rem, 3.5vw, 1.15rem);
-      font-weight: 700;
-      line-height: 1.5;
-    }
-
-    /* ===================================
-       Layout
-    =================================== */
-    .container {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    section {
-      padding: 60px 0;
-    }
-
-    /* ===================================
-       LINE Button
-    =================================== */
-    .btn-line {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: #06C755;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.05rem;
-      font-weight: 800;
-      padding: 17px 20px;
-      border-radius: 50px;
-      letter-spacing: 0.04em;
-      box-shadow: 0 5px 22px rgba(6, 199, 85, 0.42);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      cursor: pointer;
-      border: none;
-      width: 100%;
-    }
-
-    .btn-line:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(6, 199, 85, 0.5);
-    }
-
-    .btn-line:active {
-      transform: translateY(0) scale(0.98);
-    }
-
-    /* LINE icon — CSS only */
-    .btn-line-icon {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background: rgba(255,255,255,0.25);
-      border-radius: 7px;
-      position: relative;
-      flex-shrink: 0;
-    }
-
-    .btn-line-icon::before {
-      content: '';
-      position: absolute;
-      inset: 5px 4px auto 4px;
-      height: 7px;
-      background: #fff;
-      border-radius: 3px;
-    }
-
-    .btn-line-icon::after {
-      content: '';
-      position: absolute;
-      bottom: 4px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 10px;
-      height: 5px;
-      background: #fff;
-      border-radius: 2px;
-    }
-
-    /* ===================================
-       Hero Section
-    =================================== */
-    #hero {
-      background: linear-gradient(150deg, #1A1740 0%, #2D1F6E 45%, #1E184A 100%);
-      color: #fff;
-      padding: 68px 0 76px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Decorative blobs */
-    #hero::before {
-      content: '';
-      position: absolute;
-      width: 360px;
-      height: 360px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(108,99,255,0.18) 0%, transparent 70%);
-      top: -80px;
-      right: -80px;
-      pointer-events: none;
-    }
-
-    #hero::after {
-      content: '';
-      position: absolute;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,210,120,0.12) 0%, transparent 70%);
-      bottom: -60px;
-      left: -40px;
-      pointer-events: none;
-    }
-
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255, 215, 0, 0.15);
-      color: #FFD966;
-      border: 1px solid rgba(255, 215, 0, 0.3);
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 5px 14px;
-      border-radius: 20px;
-      letter-spacing: 0.08em;
-      margin-bottom: 22px;
-    }
-
-    #hero h1 {
-      color: #fff;
-      margin-bottom: 10px;
-    }
-
-    #hero h1 span {
-      display: block;
-      font-size: clamp(1.1rem, 4vw, 1.5rem);
-      font-weight: 400;
-      color: rgba(255,255,255,0.6);
-      letter-spacing: 0.02em;
-      margin-bottom: 6px;
-    }
-
-    .hero-subtitle {
-      font-size: clamp(1rem, 3.8vw, 1.2rem);
-      color: rgba(255,255,255,0.82);
-      margin: 18px 0 32px;
-      font-weight: 500;
-      line-height: 1.7;
-    }
-
-    .hero-checks {
-      list-style: none;
-      margin-bottom: 36px;
-    }
-
-    .hero-checks li {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.78);
-      padding: 5px 0 5px 24px;
-      position: relative;
-      line-height: 1.5;
-    }
-
-    .hero-checks li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: #06C755;
-      font-weight: 900;
-    }
-
-    .hero-note {
-      text-align: center;
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.4);
-      margin-top: 14px;
-      letter-spacing: 0.04em;
-    }
-
-    .scroll-arrow {
-      text-align: center;
-      margin-top: 36px;
-      animation: float 2.2s ease-in-out infinite;
-    }
-
-    .scroll-arrow span {
-      display: inline-block;
-      width: 36px;
-      height: 36px;
-      border-right: 2px solid rgba(255,255,255,0.25);
-      border-bottom: 2px solid rgba(255,255,255,0.25);
-      transform: rotate(45deg);
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50%       { transform: translateY(8px); }
-    }
-
-    /* ===================================
-       Section Common
-    =================================== */
-    .section-tag {
-      display: inline-block;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      color: #9B8FCC;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    .section-divider {
-      height: 3px;
-      background: linear-gradient(90deg, transparent, #D8D3F0 30%, #D8D3F0 70%, transparent);
-    }
-
-    /* ===================================
-       Empathy Section
-    =================================== */
-    #empathy {
-      background: #fff;
-    }
-
-    #empathy h2 {
-      color: #1A1740;
       margin-bottom: 20px;
     }
 
-    /* Tax amount display */
-    .tax-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin: 28px 0 14px;
+    /* Header */
+    header {
+      background: #FFFFFF;
+      padding: 16px 20px;
+      border-bottom: 2px solid #C0392B;
     }
 
-    .tax-card {
-      background: #FFF6EE;
-      border: 2px solid #FFDBBB;
-      border-radius: 14px;
-      padding: 18px 14px;
+    .logo {
+      color: #C0392B;
+      font-weight: 900;
+      font-size: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* Hero */
+    #hero {
+      background: #C0392B;
+      color: #FFFFFF;
+      padding: 48px 20px 52px;
+    }
+
+    #hero h1 {
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+
+    .hero-sub {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    /* Buttons */
+    .btn-main {
+      display: block;
+      background: #FFFFFF;
+      color: #C0392B;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 900;
+      padding: 16px 20px;
+      border-radius: 6px;
       text-align: center;
+      letter-spacing: 0.03em;
+      border: none;
+      cursor: pointer;
+      width: 100%;
     }
 
-    .tax-card .t-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #AA6600;
-      letter-spacing: 0.05em;
-      margin-bottom: 8px;
+    .btn-main:active {
+      opacity: 0.9;
     }
 
-    .tax-card .t-amount {
-      font-size: 1.65rem;
+    .btn-cta {
+      display: block;
+      background: #C0392B;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 1rem;
       font-weight: 900;
-      color: #CC4400;
-      line-height: 1;
+      padding: 16px 20px;
+      border-radius: 6px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      border: none;
+      cursor: pointer;
+      width: 100%;
     }
 
-    .tax-card .t-unit {
-      font-size: 0.72rem;
-      color: #999;
-      margin-top: 5px;
+    .btn-cta:active {
+      opacity: 0.9;
     }
 
-    .tax-total-bar {
-      background: linear-gradient(135deg, #FFF0EC, #FFE4DC);
-      border: 2px solid #FFBBAA;
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin-bottom: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
+    /* Sections */
+    section {
+      padding: 48px 20px;
     }
 
-    .ttb-label {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: #555;
+    section:nth-child(even) {
+      background: #FFF5F5;
     }
 
-    .ttb-amount {
-      font-size: 1.8rem;
-      font-weight: 900;
-      color: #B02020;
-      white-space: nowrap;
-    }
-
-    .ttb-note {
-      font-size: 0.75rem;
-      color: #888;
-      margin-top: 2px;
-    }
-
-    /* Empathy checklist */
+    /* Empathy list */
     .emp-list {
       list-style: none;
-      background: #F7F5FF;
-      border-radius: 14px;
-      padding: 6px 20px;
-      margin: 24px 0;
+      margin: 20px 0;
     }
 
     .emp-list li {
-      font-size: 0.93rem;
-      padding: 11px 0 11px 28px;
+      padding: 10px 0 10px 20px;
       position: relative;
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-      line-height: 1.5;
+      border-bottom: 1px solid #EEE;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     .emp-list li:last-child {
@@ -378,575 +150,241 @@
     }
 
     .emp-list li::before {
-      content: '😔';
+      content: '・';
       position: absolute;
       left: 0;
-      top: 10px;
-      font-size: 1rem;
-    }
-
-    .emp-conclusion {
-      background: #1A1740;
-      color: #fff;
-      border-radius: 14px;
-      padding: 20px 22px;
-      font-size: 0.97rem;
-      font-weight: 600;
-      line-height: 1.7;
-    }
-
-    .emp-conclusion em {
-      font-style: normal;
-      color: #FFD966;
-    }
-
-    /* ===================================
-       Solution Section
-    =================================== */
-    #solution {
-      background: #F4F2FF;
-    }
-
-    #solution h2 {
-      color: #1A1740;
-      margin-bottom: 6px;
-    }
-
-    .solution-lead {
-      font-size: 0.95rem;
-      color: #555;
-      margin: 14px 0 28px;
-    }
-
-    /* Compare cards */
-    .compare-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin: 20px 0 28px;
-    }
-
-    .cg-card {
-      border-radius: 14px;
-      padding: 20px 14px;
-      text-align: center;
-    }
-
-    .cg-card.ng {
-      background: #FFF0F0;
-      border: 2px solid #FFCCCC;
-    }
-
-    .cg-card.ok {
-      background: #EDFFF4;
-      border: 2px solid #99DDBB;
-    }
-
-    .cg-icon {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .cg-name {
-      font-size: 0.78rem;
-      font-weight: 800;
-      color: #444;
-      margin-bottom: 10px;
-      letter-spacing: 0.04em;
-    }
-
-    .cg-value {
-      font-size: 1.05rem;
+      color: #C0392B;
       font-weight: 900;
-      line-height: 1.3;
     }
 
-    .cg-card.ng .cg-value { color: #CC2200; }
-    .cg-card.ok .cg-value { color: #00884A; }
-
-    .cg-desc {
-      font-size: 0.75rem;
-      color: #777;
-      margin-top: 6px;
-      line-height: 1.5;
-    }
-
-    /* Feature cards */
-    .features {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .feat-card {
-      background: #fff;
-      border-radius: 14px;
-      padding: 18px 18px;
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      box-shadow: 0 2px 16px rgba(60,40,120,0.07);
-    }
-
-    .feat-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      background: #EEE8FF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      flex-shrink: 0;
-    }
-
-    .feat-body h3 {
-      font-size: 0.97rem;
-      font-weight: 800;
-      color: #1A1740;
-      margin-bottom: 5px;
-    }
-
-    .feat-body p {
-      font-size: 0.85rem;
-      color: #555;
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    /* ===================================
-       Benefit Section
-    =================================== */
-    #benefit {
-      background: #fff;
-    }
-
-    #benefit h2 {
-      color: #1A1740;
-      margin-bottom: 6px;
-    }
-
-    .benefit-lead {
+    /* Author section */
+    .author-box {
+      background: #FFF5F5;
+      border-left: 4px solid #C0392B;
+      border-radius: 0 8px 8px 0;
+      padding: 20px;
+      margin-top: 20px;
       font-size: 0.95rem;
-      color: #555;
-      margin: 14px 0 24px;
-    }
-
-    /* E-book mock card */
-    .ebook-card {
-      background: linear-gradient(140deg, #23196A 0%, #3D2DA0 55%, #2A1E80 100%);
-      border-radius: 18px;
-      padding: 28px 22px;
-      color: #fff;
-      margin-bottom: 24px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .ebook-card::before {
-      content: '';
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.05);
-      top: -50px;
-      right: -40px;
-    }
-
-    .ebook-card::after {
-      content: '';
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.04);
-      bottom: -30px;
-      left: 20px;
-    }
-
-    .ebook-badge {
-      display: inline-block;
-      background: #FFD740;
-      color: #333;
-      font-size: 0.72rem;
-      font-weight: 800;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-bottom: 14px;
-      letter-spacing: 0.05em;
-      position: relative;
-      z-index: 1;
-    }
-
-    .ebook-title {
-      font-size: 1.15rem;
-      font-weight: 900;
-      line-height: 1.45;
-      margin-bottom: 18px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .ebook-list {
-      list-style: none;
-      position: relative;
-      z-index: 1;
-    }
-
-    .ebook-list li {
-      font-size: 0.87rem;
-      padding: 8px 0 8px 18px;
-      position: relative;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      color: rgba(255,255,255,0.88);
-      line-height: 1.5;
-    }
-
-    .ebook-list li:last-child {
-      border-bottom: none;
-    }
-
-    .ebook-list li::before {
-      content: '▶';
-      position: absolute;
-      left: 0;
-      top: 10px;
-      font-size: 0.6rem;
-      color: #FFD740;
-    }
-
-    /* Free tools tags */
-    .free-label {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #1A1740;
-      margin-bottom: 10px;
-    }
-
-    .free-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-
-    .free-tag {
-      background: #EDFFF4;
-      color: #006633;
-      border: 1.5px solid #99DDBB;
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 6px 14px;
-      border-radius: 20px;
-    }
-
-    .free-tag::before {
-      content: '✓ ';
-      color: #06C755;
-    }
-
-    /* Trust note */
-    .trust-note {
-      background: #F8F8FB;
-      border-radius: 10px;
-      padding: 14px 18px;
-      font-size: 0.83rem;
-      color: #666;
-      text-align: center;
-      line-height: 1.7;
-      margin-bottom: 28px;
-    }
-
-    /* ===================================
-       Fixed Footer CTA
-    =================================== */
-    #fixed-cta {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255,255,255,0.97);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-top: 1px solid rgba(0,0,0,0.08);
-      padding: 10px 20px;
-      z-index: 999;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
-    }
-
-    #fixed-cta .btn-line {
-      max-width: 500px;
-      margin: 0 auto;
-      font-size: 1rem;
-      padding: 14px 20px;
-    }
-
-    /* ===================================
-       Footer
-    =================================== */
-    footer {
-      background: #1A1740;
-      color: rgba(255,255,255,0.4);
-      text-align: center;
-      padding: 24px 20px;
-      font-size: 0.76rem;
       line-height: 1.8;
     }
 
-    /* ===================================
-       Utility
-    =================================== */
-    .mt-8  { margin-top: 8px; }
-    .mt-16 { margin-top: 16px; }
-    .mt-24 { margin-top: 24px; }
-
-    .highlight {
-      background: linear-gradient(transparent 58%, rgba(255,213,0,0.45) 58%);
-      font-weight: 700;
+    /* Book mock */
+    .book-mock {
+      background: #C0392B;
+      color: #FFFFFF;
+      border-radius: 8px;
+      padding: 28px 20px;
+      text-align: center;
+      margin: 20px 0;
     }
 
-    /* ===================================
-       Responsive
-    =================================== */
-    @media (max-width: 380px) {
-      .tax-cards    { grid-template-columns: 1fr; }
-      .compare-grid { grid-template-columns: 1fr; }
-      .tax-total-bar { flex-direction: column; text-align: center; }
+    .book-mock-title {
+      font-size: 1.1rem;
+      font-weight: 900;
+      line-height: 1.5;
+      margin-bottom: 10px;
     }
 
-    @media (min-width: 680px) {
-      body { font-size: 17px; }
-      section { padding: 80px 0; }
-      #fixed-cta { padding: 12px 20px; }
+    .book-mock-badge {
+      display: inline-block;
+      background: #FFFFFF;
+      color: #C0392B;
+      font-size: 0.85rem;
+      font-weight: 900;
+      padding: 6px 20px;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+
+    /* Book contents list */
+    .book-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .book-list li {
+      padding: 10px 0 10px 24px;
+      position: relative;
+      border-bottom: 1px solid #EEE;
+      font-size: 0.93rem;
+      line-height: 1.6;
+    }
+
+    .book-list li:last-child {
+      border-bottom: none;
+    }
+
+    .book-list li::before {
+      content: '▶';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      font-size: 0.65rem;
+      color: #C0392B;
+    }
+
+    /* Check list */
+    .check-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .check-list li {
+      padding: 10px 0 10px 28px;
+      position: relative;
+      border-bottom: 1px solid #EEE;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .check-list li:last-child {
+      border-bottom: none;
+    }
+
+    .check-list li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #C0392B;
+      font-weight: 900;
+    }
+
+    /* CTA section */
+    #cta {
+      background: #C0392B;
+      color: #FFFFFF;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    #cta h2 {
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+
+    .cta-desc {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+
+    /* Fixed bottom CTA */
+    #fixed-cta {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      background: #C0392B;
+      padding: 10px 16px;
+      z-index: 999;
+      box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
+    }
+
+    #fixed-cta .btn-fixed {
+      display: block;
+      background: #FFFFFF;
+      color: #C0392B;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 900;
+      padding: 13px 20px;
+      border-radius: 6px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    /* Footer */
+    footer {
+      background: #2C2C2C;
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.75rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- ========================================
-       HERO
-  ======================================== -->
+  <!-- Header -->
+  <header>
+    <div class="logo">脱サラの赤本</div>
+  </header>
+
+  <!-- Hero -->
   <section id="hero">
-    <div class="container">
-
-      <div class="hero-eyebrow">📣 無料電子書籍 プレゼント中</div>
-
-      <h1>
-        <span>固定資産税・住民税に悩む方へ</span>
-        節約より、<br>稼ぐ。
-      </h1>
-
-      <p class="hero-subtitle">
-        AIを使えば、スキルゼロでも<br>最短で収入を作れます
-      </p>
-
-      <ul class="hero-checks">
-        <li>初期費用ゼロ・無料ツールだけで始められる</li>
-        <li>スマホ1台・1日30分からOK</li>
-        <li>ChatGPTで月3万円を目指す30日ロードマップ付き</li>
-      </ul>
-
-      <a href="https://line.me/R/ti/p/%40748gdxlx" class="btn-line">
-        <span class="btn-line-icon"></span>
-        無料で電子書籍を受け取る
-      </a>
-      <p class="hero-note">登録30秒 ・ 解除もワンタップ ・ 勧誘なし</p>
-
-      <div class="scroll-arrow"><span></span></div>
-
-    </div>
+    <h1>その税金の請求書、節約で乗り越えようとしていませんか？</h1>
+    <p class="hero-sub">副業禁止の会社員が半年で年収を超えたWEB起業の方法を無料でお渡しします</p>
+    <a href="#" class="btn-main">▶︎ 脱サラの赤本を無料で受け取る</a>
   </section>
 
-  <div class="section-divider"></div>
-
-  <!-- ========================================
-       EMPATHY
-  ======================================== -->
+  <!-- Empathy -->
   <section id="empathy">
-    <div class="container">
+    <h2>毎年この時期、こんな気持ちになりませんか？</h2>
+    <ul class="emp-list">
+      <li>固定資産税の封筒を開けるたびにため息が出る</li>
+      <li>節約しても税金だけは削れない</li>
+      <li>会社員として何十年も働き続けることへの漠然とした不安</li>
+      <li>副業しようにも何から始めればいいかわからない</li>
+    </ul>
+  </section>
 
-      <span class="section-tag">あなたへ</span>
-      <h2>税金の請求書、<br>今年も来ましたか？</h2>
-
-      <p>毎年6月、ポストに届く封筒を開けるたびに胃が重くなる——固定資産税と住民税。節約を頑張っても、この「削れない固定費」の壁だけは越えられない。</p>
-
-      <div class="tax-cards">
-        <div class="tax-card">
-          <div class="t-label">固定資産税（年間）</div>
-          <div class="t-amount">15万円</div>
-          <div class="t-unit">戸建て一般的な目安</div>
-        </div>
-        <div class="tax-card">
-          <div class="t-label">住民税（年間）</div>
-          <div class="t-amount">25万円</div>
-          <div class="t-unit">年収500万円の目安</div>
-        </div>
-      </div>
-
-      <div class="tax-total-bar">
-        <div>
-          <div class="ttb-label">合わせると年間</div>
-          <div class="ttb-note">月に換算すると約 3.3万円 が消える</div>
-        </div>
-        <div class="ttb-amount">約40万円</div>
-      </div>
-
-      <p>「<span class="highlight">節約はもうやり尽くした</span>」という感覚は正しい。問題はあなたの意志ではなく、<strong>税金という削れない支出が大きすぎること</strong>です。</p>
-
-      <ul class="emp-list">
-        <li>固定資産税の通知が来るたびにため息が出る</li>
-        <li>節約アプリや家計簿をつけても貯金が増えない</li>
-        <li>副業に興味はあるが「スキルがない」と思っている</li>
-        <li>40〜50代で今さら副業は無理かなと思っている</li>
-        <li>何から始めればいいのか全くわからない</li>
-      </ul>
-
-      <div class="emp-conclusion">
-        1つでも当てはまるなら、<em>あなたに必要なのは節約術ではありません。</em><br>
-        収入を増やすための、具体的な「始め方」です。
-      </div>
-
+  <!-- Author -->
+  <section id="author">
+    <h2>著者も同じでした</h2>
+    <div class="author-box">
+      副業禁止の会社員として働きながら、色んな副業でマイナスを出し続けた。<br><br>
+      そんな中でWEBマーケティングという考え方に出会い、半年で会社の年収を副収入が超えた。<br><br>
+      今もサラリーマンを続けながら、社長並みの副収入がある。
     </div>
   </section>
 
-  <div class="section-divider"></div>
+  <!-- Book -->
+  <section id="book">
+    <h2>脱サラの赤本：全30ページ</h2>
 
-  <!-- ========================================
-       SOLUTION
-  ======================================== -->
-  <section id="solution">
-    <div class="container">
-
-      <span class="section-tag">なぜ今AIなのか</span>
-      <h2>節約より稼ぐ方が<br>合理的な理由</h2>
-
-      <p class="solution-lead">「月3万円を手元に増やす」という同じゴール。節約とAI副業、どちらが現実的かを比べます。</p>
-
-      <div class="compare-grid">
-        <div class="cg-card ng">
-          <div class="cg-icon">✂️</div>
-          <div class="cg-name">節約だけの場合</div>
-          <div class="cg-value">月2.4万円<br>が上限</div>
-          <div class="cg-desc">すべての節約手段を<br>同時に実行しても限界</div>
-        </div>
-        <div class="cg-card ok">
-          <div class="cg-icon">📈</div>
-          <div class="cg-name">AI副業の場合</div>
-          <div class="cg-value">上限なし<br>積み上げ型</div>
-          <div class="cg-desc">続けるほど収入が増え<br>3〜6ヶ月で月3万円へ</div>
-        </div>
-      </div>
-
-      <p>節約で月3万円を生み出すには、外食・サブスク・スマホ代・光熱費をすべて極限まで削る必要があります。それでも2万4,000円止まり。しかも毎月続けるのは精神的にも限界です。</p>
-      <p>一方、<span class="highlight">AI副業に上限はありません。</span>スキルの代わりにAIが補助するため、今日から始められます。</p>
-
-      <div class="features">
-
-        <div class="feat-card">
-          <div class="feat-icon">📱</div>
-          <div class="feat-body">
-            <h3>スマホ1台・初期費用ゼロで始められる</h3>
-            <p>ChatGPTをはじめ、主要なAIツールはすべて無料枠で使えます。パソコンがなくても、今すぐ始めることができます。</p>
-          </div>
-        </div>
-
-        <div class="feat-card">
-          <div class="feat-icon">⏱️</div>
-          <div class="feat-body">
-            <h3>1日30分・隙間時間だけでできる</h3>
-            <p>仕事・育児・家事と並行できます。まとまった時間は必要ありません。月3万円は週5日×30分の積み上げで十分届く金額です。</p>
-          </div>
-        </div>
-
-        <div class="feat-card">
-          <div class="feat-icon">🤖</div>
-          <div class="feat-body">
-            <h3>AIが作業を補助するからスキル不要</h3>
-            <p>文章が苦手でもAIが下書きを生成し、デザイン経験がなくてもAIが画像を作ります。必要なのは「AIに何を指示するか」を考える力だけです。</p>
-          </div>
-        </div>
-
-        <div class="feat-card">
-          <div class="feat-icon">🗓️</div>
-          <div class="feat-body">
-            <h3>30日ロードマップで迷わず進める</h3>
-            <p>「何から始めればいいかわからない」を解消するための30日間の行動リストをそのままお渡しします。毎日やることが明確です。</p>
-          </div>
-        </div>
-
-      </div>
-
+    <div class="book-mock">
+      <div class="book-mock-title">脱サラの赤本</div>
+      <div class="book-mock-badge">全30ページ・完全無料</div>
     </div>
+
+    <ul class="book-list">
+      <li>副業でマイナスばかりだった著者の実話</li>
+      <li>なぜ他の副業ではなくWEBマーケなのか</li>
+      <li>会社にバレずに副業できる理由</li>
+      <li>半年で年収を超えるために知っておくべき1つのコツ</li>
+    </ul>
   </section>
 
-  <div class="section-divider"></div>
-
-  <!-- ========================================
-       BENEFIT
-  ======================================== -->
-  <section id="benefit">
-    <div class="container">
-
-      <span class="section-tag">無料プレゼント</span>
-      <h2>LINE登録で<br>今すぐ受け取れます</h2>
-
-      <p class="benefit-lead">LINE登録後すぐに、以下の電子書籍をお届けします。</p>
-
-      <div class="ebook-card">
-        <div class="ebook-badge">📖 無料電子書籍</div>
-        <div class="ebook-title">
-          AIで副業を始める<br>30日間ロードマップ<br>
-          <small style="font-size:0.78rem; font-weight:400; opacity:0.7;">スキル不要・ツールすべて無料</small>
-        </div>
-        <ul class="ebook-list">
-          <li>AIツールの選び方と、初日にやること（画面付き手順）</li>
-          <li>ChatGPTで記事を書いて稼ぐプロンプトテンプレ集</li>
-          <li>クラウドワークスで最初の1件を受注する応募文サンプル</li>
-          <li>月3万円を達成する週ごとの具体的な行動リスト（30日分）</li>
-          <li>副業収入と税金の基礎知識・確定申告Q&A</li>
-        </ul>
-      </div>
-
-      <p class="free-label">📌 使用するツールはすべて無料です</p>
-      <div class="free-tags">
-        <span class="free-tag">ChatGPT（無料プラン）</span>
-        <span class="free-tag">Canva（無料プラン）</span>
-        <span class="free-tag">クラウドワークス</span>
-        <span class="free-tag">NotebookLM</span>
-      </div>
-
-      <div class="trust-note">
-        🔒 登録は30秒で完了します<br>
-        しつこい勧誘・営業メッセージは一切ありません<br>
-        解除もワンタップでいつでも可能です
-      </div>
-
-      <a href="https://line.me/R/ti/p/%40748gdxlx" class="btn-line">
-        <span class="btn-line-icon"></span>
-        無料で電子書籍を受け取る
-      </a>
-
-    </div>
+  <!-- For whom -->
+  <section id="forwho">
+    <h2>こんな方に読んでほしい</h2>
+    <ul class="check-list">
+      <li>税金の請求書を見てため息が出た方</li>
+      <li>節約より収入を増やしたい会社員・主婦の方</li>
+      <li>副業禁止でも収入を作りたい方</li>
+      <li>WEBマーケティングに興味がある方</li>
+      <li>脱サラを将来的に考えている方</li>
+    </ul>
   </section>
 
-  <!-- ========================================
-       FOOTER
-  ======================================== -->
+  <!-- CTA -->
+  <section id="cta">
+    <h2>今すぐ無料で受け取れます</h2>
+    <p class="cta-desc">LINEの友だち追加をするだけで、すぐにPDFをお送りします。</p>
+    <a href="#" class="btn-main">▶︎ 脱サラの赤本を無料で受け取る</a>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2026 AI副業ロードマップ</p>
-    <p>本サービスはLINE株式会社が提供するサービスではありません。</p>
+    <p>© 2026 All rights reserved.</p>
   </footer>
 
-  <!-- ========================================
-       FIXED FOOTER CTA
-  ======================================== -->
+  <!-- Fixed bottom CTA -->
   <div id="fixed-cta">
-    <a href="https://line.me/R/ti/p/%40748gdxlx" class="btn-line">
-      <span class="btn-line-icon"></span>
-      無料で電子書籍を受け取る →
-    </a>
+    <a href="#" class="btn-fixed">▶︎ 脱サラの赤本を無料で受け取る</a>
   </div>
 
 </body>
